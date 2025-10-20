@@ -19,9 +19,11 @@ export default function Navigation() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/">
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent cursor-pointer">
-              MalingaTech
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="malinga.tech" 
+              className="h-8 cursor-pointer"
+            />
           </Link>
 
           <div className="flex items-center gap-8">

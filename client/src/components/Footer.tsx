@@ -7,12 +7,14 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent mb-4">
-              MalingaTech
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="malinga.tech" 
+              className="h-8 mb-4"
+            />
             <p className="text-muted-foreground text-sm max-w-md">
-              Connecting African innovation with global opportunities through
-              strategic technology investments and digital transformation.
+              Africa's technology future, compounded. We build profitable ventures
+              using invisible technology that serves Africa's evolving needs.
             </p>
           </div>
 

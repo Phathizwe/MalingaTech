@@ -15,15 +15,15 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary">
-              African Innovation • Global Opportunities
+              Africa's Technology Future, Compounded
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-blue-500 bg-clip-text text-transparent leading-tight">
-              Building the Future of African Technology
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Building Profitable Ventures Through{" "}
+              <span className="text-primary">Invisible Technology</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              MalingaTech is a South African technology investment and development
-              portfolio connecting innovative solutions with strategic opportunities
-              across the continent and beyond.
+              We build profitable ventures using invisible technology that serves
+              Africa's evolving needs—creating lasting solutions that compound over time.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Link href="/portfolio">
@@ -54,7 +54,7 @@ export default function Home() {
               <div className="text-muted-foreground">Years Leadership</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">4</div>
+              <div className="text-4xl font-bold text-primary mb-2">3</div>
               <div className="text-muted-foreground">Portfolio Companies</div>
             </div>
             <div className="text-center">
@@ -65,66 +65,149 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Investment Thesis */}
+      {/* Golden Circle - Why, How, What */}
       <section className="py-20 px-6">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Investment Thesis</h2>
+            <h2 className="text-4xl font-bold mb-4">Our Golden Circle</h2>
             <p className="text-lg text-muted-foreground">
-              We invest in technology-driven solutions that create scalable impact
-              across African markets
+              Understanding our purpose, process, and product
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Card className="border-2 hover:border-primary transition-colors">
               <CardHeader>
-                <Globe className="h-10 w-10 text-primary mb-4" />
-                <CardTitle>African Market Focus</CardTitle>
+                <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-primary">?</span>
+                </div>
+                <CardTitle>Why</CardTitle>
+                <CardDescription className="text-base font-semibold text-foreground">
+                  Our Purpose
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Africa is becoming. We compound the results.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-colors">
+              <CardHeader>
+                <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-primary">→</span>
+                </div>
+                <CardTitle>How</CardTitle>
+                <CardDescription className="text-base font-semibold text-foreground">
+                  Our Process
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Through invisible technology that disappears into everyday solutions.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-colors">
+              <CardHeader>
+                <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-primary">!</span>
+                </div>
+                <CardTitle>What</CardTitle>
+                <CardDescription className="text-base font-semibold text-foreground">
+                  Our Product
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Profitable ventures that serve Africa's evolving needs.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-20 px-6 bg-muted/30">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Our Values</h2>
+            <p className="text-lg text-muted-foreground">
+              The principles that guide everything we do
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Card className="border-2 hover:border-primary transition-colors">
+              <CardHeader>
+                <CardTitle className="text-lg">Doing Over Doubting</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Deep understanding of South African business needs and emerging
-                  opportunities across the continent
+                  We act rather than analyze, bringing our full excellence to every
+                  piece of work.
                 </CardDescription>
               </CardContent>
             </Card>
 
             <Card className="border-2 hover:border-primary transition-colors">
               <CardHeader>
-                <Lightbulb className="h-10 w-10 text-primary mb-4" />
-                <CardTitle>Technology-Driven</CardTitle>
+                <CardTitle className="text-lg">Excellence in the Ordinary</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Applying digital innovation to transform traditional sectors and
-                  create new market opportunities
+                  We bring our complete presence to all work, whether glamorous or
+                  mundane.
                 </CardDescription>
               </CardContent>
             </Card>
 
             <Card className="border-2 hover:border-primary transition-colors">
               <CardHeader>
-                <TrendingUp className="h-10 w-10 text-primary mb-4" />
-                <CardTitle>Scalable Models</CardTitle>
+                <CardTitle className="text-lg">Full Presence</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Building platforms designed to grow within South Africa and
-                  expand across African markets
+                  Every task receives our complete attention and commitment to
+                  excellence.
                 </CardDescription>
               </CardContent>
             </Card>
 
             <Card className="border-2 hover:border-primary transition-colors">
               <CardHeader>
-                <Users className="h-10 w-10 text-primary mb-4" />
-                <CardTitle>Practical Impact</CardTitle>
+                <CardTitle className="text-lg">Believing in People</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Creating solutions that improve lives in underserved communities
-                  through accessible technology
+                  We trust in people's potential and goodness, because everyone
+                  benefits when Africa rises.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-colors">
+              <CardHeader>
+                <CardTitle className="text-lg">Sharing Knowledge Widely</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  We freely share what we learn, lifting others as we grow together.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary transition-colors">
+              <CardHeader>
+                <CardTitle className="text-lg">Building What Lasts</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  We're not chasing trends—we're building permanent solutions that
+                  compound over time.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -133,7 +216,7 @@ export default function Home() {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-20 px-6 bg-muted/30">
+      <section className="py-20 px-6">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -174,7 +257,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="relative">
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-blue-500/20 border-2 border-primary/20 flex items-center justify-center">
+                <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/20 flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="text-6xl font-bold text-primary mb-4">PM</div>
                     <div className="text-xl font-semibold">Phathizwe Malinga</div>
@@ -188,9 +271,9 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-muted/30">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-primary/10 to-blue-500/10 rounded-2xl p-12 border border-primary/20">
+          <div className="max-w-3xl mx-auto text-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-12 border border-primary/20">
             <h2 className="text-3xl font-bold mb-4">
               Ready to Connect?
             </h2>

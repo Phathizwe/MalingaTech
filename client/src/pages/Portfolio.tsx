@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, DollarSign, ShoppingCart, Briefcase, Globe } from "lucide-react";
+import { ExternalLink, DollarSign, Briefcase, Globe } from "lucide-react";
 
 const portfolioCompanies = [
   {
@@ -13,16 +13,7 @@ const portfolioCompanies = [
     sector: "Fintech",
     stage: "Active",
     icon: DollarSign,
-    color: "from-green-500 to-emerald-500",
-  },
-  {
-    name: "Coupin",
-    domain: "coupin.co.za",
-    description: "Digital coupon and deals platform connecting South African consumers with local businesses and exclusive offers.",
-    sector: "E-commerce",
-    stage: "Active",
-    icon: ShoppingCart,
-    color: "from-orange-500 to-red-500",
+    color: "from-teal-500 to-cyan-500",
   },
   {
     name: "Operiva",
@@ -31,7 +22,7 @@ const portfolioCompanies = [
     sector: "B2B SaaS",
     stage: "Active",
     icon: Briefcase,
-    color: "from-blue-500 to-cyan-500",
+    color: "from-blue-500 to-indigo-500",
   },
   {
     name: "Wetyca",
@@ -57,8 +48,8 @@ export default function Portfolio() {
               Our Portfolio
             </h1>
             <p className="text-xl text-muted-foreground">
-              A diverse range of technology ventures across fintech, e-commerce,
-              and business services
+              Profitable ventures using invisible technology to serve Africa's
+              evolving needs
             </p>
           </div>
         </div>
@@ -67,7 +58,7 @@ export default function Portfolio() {
       {/* Portfolio Grid */}
       <section className="py-16 px-6">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {portfolioCompanies.map((company) => {
               const Icon = company.icon;
               return (
@@ -136,24 +127,24 @@ export default function Portfolio() {
 
               <Card className="border-2">
                 <CardHeader>
-                  <CardTitle className="text-xl">E-commerce</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Digital marketplaces and platforms connecting consumers with
-                    products, services, and local businesses.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-
-              <Card className="border-2">
-                <CardHeader>
                   <CardTitle className="text-xl">B2B SaaS</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
                     Business software solutions streamlining operations,
                     improving efficiency, and enabling digital transformation.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2">
+                <CardHeader>
+                  <CardTitle className="text-xl">Consulting</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>
+                    Technology consulting services delivering expertise and
+                    strategic guidance for digital transformation initiatives.
                   </CardDescription>
                 </CardContent>
               </Card>
