@@ -1,9 +1,10 @@
 import { cn } from "@/lib/utils";
+import type { SVGProps } from "react";
 
 interface Logo {
   name: string;
   id: number;
-  img: string;
+  img: React.ComponentType<SVGProps<SVGSVGElement>> | string;
 }
 
 interface LogoCarouselProps {
@@ -26,18 +27,27 @@ export function LogoCarousel({
           columnCount === 4 && "grid-cols-2 md:grid-cols-4"
         )}
       >
-        {logos.map((logo) => (
-          <div
-            key={logo.id}
-            className="flex items-center justify-center h-24 w-full px-4 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-          >
-            <img
-              src={logo.img}
-              alt={logo.name}
-              className="max-h-full max-w-full object-contain"
-            />
-          </div>
-        ))}
+        {logos.map((logo) => {
+          const LogoComponent = logo.img;
+          const isComponent = typeof LogoComponent !== "string";
+          
+          return (
+            <div
+              key={logo.id}
+              className="flex items-center justify-center h-24 w-full px-4 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+            >
+              {isComponent ? (
+                <LogoComponent className="max-h-full max-w-full" />
+              ) : (
+                <img
+                  src={LogoComponent}
+                  alt={logo.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

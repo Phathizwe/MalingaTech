@@ -1,5 +1,8 @@
+"use client";
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { GradientHeading } from "@/components/ui/gradient-heading";
 import { LogoCarousel } from "@/components/ui/logo-carousel";
 
 const portfolioLogos = [
@@ -15,8 +18,17 @@ export default function Home() {
 
       {/* Logo Carousel Section */}
       <section className="pt-32 pb-20 px-6 flex-1 flex items-center">
-        <div className="container mx-auto">
-          <div className="max-w-5xl mx-auto">
+        <div className="space-y-8 py-24 w-full">
+          <div className="mx-auto flex w-full max-w-screen-lg flex-col items-center space-y-8">
+            <div className="text-center">
+              <GradientHeading variant="secondary">
+                Our Portfolio
+              </GradientHeading>
+              <GradientHeading size="xxl">
+                Building Africa's Future
+              </GradientHeading>
+            </div>
+
             <LogoCarousel columnCount={3} logos={portfolioLogos} />
           </div>
         </div>
