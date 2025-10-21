@@ -22,7 +22,7 @@ export default function Navigation() {
             <img 
               src="/logo.png" 
               alt="malinga.tech" 
-              className="h-8 cursor-pointer"
+              className="h-10 cursor-pointer"
             />
           </Link>
 

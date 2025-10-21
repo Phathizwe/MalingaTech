@@ -10,7 +10,7 @@ export default function Footer() {
             <img 
               src="/logo.png" 
               alt="malinga.tech" 
-              className="h-8 mb-4"
+              className="h-10 mb-4"
             />
             <p className="text-muted-foreground text-sm max-w-md">
               Africa's technology future, compounded. We build profitable ventures
