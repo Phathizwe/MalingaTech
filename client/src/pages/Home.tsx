@@ -46,8 +46,8 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">R700M+</div>
-              <div className="text-muted-foreground">IoT Network Project</div>
+              <div className="text-4xl font-bold text-primary mb-2">Est. 2021</div>
+              <div className="text-muted-foreground">Year Founded</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">10+</div>
